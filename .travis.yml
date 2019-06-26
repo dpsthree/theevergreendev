@@ -15,5 +15,8 @@ script:
   - npm run build
   - npm run test
 
-after_success:
-  - firebase deploy --token $FIREBASE_TOKEN
+deploy:
+  skip_cleanup: true
+  provider: firebase
+  token:
+    secure: $FIREBASE_TOKEN
