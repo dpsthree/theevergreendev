@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "the-evergreen-dev": {
+      "hosting": {
+        "evergreen": [
+          "the-evergreen-dev"
+        ]
+      }
+    }
+  }
+}
