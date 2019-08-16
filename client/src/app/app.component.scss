@@ -1,0 +1,13 @@
+.container {
+  width: 100%;
+}
+
+.mat-elevation-z2 {
+  z-index: 2;
+}
+
+:host {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 64px auto;
+}
