@@ -1,1 +1,5 @@
-<p>posts works!</p>
+<mat-nav-list>
+  <a mat-list-item target="_blank" [href]="post.url" *ngFor="let post of posts">
+    {{ post.title }}
+  </a>
+</mat-nav-list>
