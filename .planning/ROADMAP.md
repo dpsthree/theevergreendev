@@ -28,7 +28,12 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. ESLint runs without errors; `tslint.json` and `codelyzer` are gone from the project
   3. The `e2e/` directory and Protractor architect target no longer exist in `angular.json`
   4. `ng build` still succeeds on Angular 8 after environment changes (baseline confirmed)
-**Plans**: TBD
+**Plans**: 3 plans
+
+Plans:
+- [ ] 01-01-PLAN.md — CI/environment foundation: update .travis.yml, remove Protractor/TSLint/Codelyzer, upgrade @types/node, regenerate lockfile, document ENV-02/ENV-03 deferral
+- [ ] 01-02-PLAN.md — ESLint migration: run ng add @angular-eslint/schematics@12, verify ng lint works
+- [ ] 01-03-PLAN.md — AOT baseline and Phase 1 gate: enable aot: true, confirm ng build succeeds, human checkpoint
 
 ### Phase 2: Core Upgrade
 **Goal**: All Angular, Material, Firebase, and supporting packages are upgraded from 8.x to 19.x via sequential one-major-version steps with a working build at each step
@@ -71,7 +76,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Pre-Flight | 0/TBD | Not started | - |
+| 1. Pre-Flight | 0/3 | Planned | - |
 | 2. Core Upgrade | 0/TBD | Not started | - |
 | 3. Deploy and Verify | 0/TBD | Not started | - |
 | 4. Modernization | 0/TBD | Not started | - |
