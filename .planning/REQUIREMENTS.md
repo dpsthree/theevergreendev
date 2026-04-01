@@ -93,47 +93,47 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| ENV-01 | — | Pending |
-| ENV-02 | — | Pending |
-| ENV-03 | — | Pending |
-| ENV-04 | — | Pending |
-| ANG-01 | — | Pending |
-| ANG-02 | — | Pending |
-| ANG-03 | — | Pending |
-| ANG-04 | — | Pending |
-| ANG-05 | — | Pending |
-| ANG-06 | — | Pending |
-| ANG-07 | — | Pending |
-| MAT-01 | — | Pending |
-| MAT-02 | — | Pending |
-| MAT-03 | — | Pending |
-| MAT-04 | — | Pending |
-| FIR-01 | — | Pending |
-| FIR-02 | — | Pending |
-| FIR-03 | — | Pending |
-| FIR-04 | — | Pending |
-| FIR-05 | — | Pending |
-| BLD-01 | — | Pending |
-| BLD-02 | — | Pending |
-| BLD-03 | — | Pending |
-| BLD-04 | — | Pending |
-| MOD-01 | — | Pending |
-| MOD-02 | — | Pending |
-| MOD-03 | — | Pending |
-| MOD-04 | — | Pending |
-| MOD-05 | — | Pending |
-| MOD-06 | — | Pending |
-| VER-01 | — | Pending |
-| VER-02 | — | Pending |
-| VER-03 | — | Pending |
-| VER-04 | — | Pending |
-| VER-05 | — | Pending |
+| ENV-01 | Phase 1 | Pending |
+| ENV-02 | Phase 1 | Pending |
+| ENV-03 | Phase 1 | Pending |
+| ENV-04 | Phase 1 | Pending |
+| ANG-01 | Phase 2 | Pending |
+| ANG-02 | Phase 2 | Pending |
+| ANG-03 | Phase 2 | Pending |
+| ANG-04 | Phase 2 | Pending |
+| ANG-05 | Phase 2 | Pending |
+| ANG-06 | Phase 2 | Pending |
+| ANG-07 | Phase 2 | Pending |
+| MAT-01 | Phase 2 | Pending |
+| MAT-02 | Phase 2 | Pending |
+| MAT-03 | Phase 2 | Pending |
+| MAT-04 | Phase 2 | Pending |
+| FIR-01 | Phase 2 | Pending |
+| FIR-02 | Phase 2 | Pending |
+| FIR-03 | Phase 3 | Pending |
+| FIR-04 | Phase 3 | Pending |
+| FIR-05 | Phase 3 | Pending |
+| BLD-01 | Phase 3 | Pending |
+| BLD-02 | Phase 1 | Pending |
+| BLD-03 | Phase 1 | Pending |
+| BLD-04 | Phase 3 | Pending |
+| MOD-01 | Phase 4 | Pending |
+| MOD-02 | Phase 4 | Pending |
+| MOD-03 | Phase 4 | Pending |
+| MOD-04 | Phase 4 | Pending |
+| MOD-05 | Phase 4 | Pending |
+| MOD-06 | Phase 4 | Pending |
+| VER-01 | Phase 3 | Pending |
+| VER-02 | Phase 3 | Pending |
+| VER-03 | Phase 3 | Pending |
+| VER-04 | Phase 3 | Pending |
+| VER-05 | Phase 3 | Pending |
 
 **Coverage:**
 - v1 requirements: 35 total
-- Mapped to phases: 0
-- Unmapped: 35
+- Mapped to phases: 35
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-03-31*
-*Last updated: 2026-03-31 after initial definition*
+*Last updated: 2026-03-31 after roadmap creation*
