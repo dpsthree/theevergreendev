@@ -1,23 +1,40 @@
 <article class="page posts-page">
   <header class="page-hero">
     <p class="page-eyebrow">Writing</p>
-    <h1 class="page-title">Articles &amp; guides</h1>
+    <h1 class="page-title">Articles &amp; notes</h1>
     <p class="page-lead">
-      Long-form notes on Angular performance, runtime behavior, and front-end
-      practice — published on the Angular blog and Oasis Digital.
+      Long-form pieces hosted here, plus older work published on the Angular blog and Oasis Digital.
     </p>
   </header>
 
   <ul class="post-list">
     <li *ngFor="let post of posts" class="post-list__item">
       <a
+        *ngIf="post.kind === 'local' && post.slug"
         class="post-link"
+        [routerLink]="['/posts', post.slug]"
+      >
+        <span class="post-link__badge">Here</span>
+        <span class="post-link__title">{{ post.title }}</span>
+        <span class="post-link__summary" *ngIf="post.summary">{{ post.summary }}</span>
+        <span class="post-link__meta">
+          <ng-container *ngIf="post.date">{{ post.date | date : 'mediumDate' }} · </ng-container>
+          On this site →
+        </span>
+      </a>
+      <a
+        *ngIf="post.kind === 'external' && post.url"
+        class="post-link post-link--external"
         [href]="post.url"
         target="_blank"
         rel="noopener noreferrer"
       >
+        <span class="post-link__badge post-link__badge--external">Elsewhere</span>
         <span class="post-link__title">{{ post.title }}</span>
-        <span class="post-link__meta" aria-hidden="true">Read externally →</span>
+        <span class="post-link__meta">
+          <ng-container *ngIf="post.date">{{ post.date | date : 'mediumDate' }} · </ng-container>
+          Read externally →
+        </span>
       </a>
     </li>
   </ul>

@@ -44,7 +44,7 @@
 .post-link {
   display: flex;
   flex-direction: column;
-  gap: 0.35rem;
+  gap: 0.4rem;
   padding: var(--space-md) 0;
   text-decoration: none;
   color: inherit;
@@ -53,6 +53,30 @@
   padding-left: var(--space-lg);
   padding-right: var(--space-lg);
   border-radius: var(--radius-sm);
+}
+
+.post-link__badge {
+  align-self: flex-start;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-sm);
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+}
+
+.post-link__badge--external {
+  background: rgba(92, 90, 86, 0.12);
+  color: var(--color-text-muted);
+}
+
+.post-link__summary {
+  font-size: 0.95rem;
+  line-height: 1.45;
+  color: var(--color-text-muted);
+  max-width: 40rem;
 }
 
 .post-link:hover {

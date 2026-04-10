@@ -1,29 +1,26 @@
-import { Component } from '@angular/core';
-
-interface Post {
-  url: string;
-  title: string;
-}
-
-const posts: Post[] = [
-  {
-    title: '3 Tips for Angular Runtime Performance from the Real World',
-    url:
-      'https://blog.angular.io/3-tips-for-angular-runtime-performance-from-the-real-world-d467fbc8f66e'
-  },
-  {
-    title: 'Angular Runtime Performance Guide',
-    url: 'https://blog.oasisdigital.com/2017/angular-runtime-performance-guide/'
-  }
-];
+import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
+import { BlogService } from './blog.service';
+import { BlogPostEntry } from './post.models';
 
 @Component({
-    selector: 'evg-posts',
-    templateUrl: './posts.component.html',
-    styleUrls: ['./posts.component.scss'],
-    standalone: false
+  selector: 'evg-posts',
+  templateUrl: './posts.component.html',
+  styleUrls: ['./posts.component.scss'],
+  standalone: false
 })
-export class PostsComponent {
-  posts: Post[] = posts;
-  constructor() {}
+export class PostsComponent implements OnInit {
+  posts: BlogPostEntry[] = [];
+
+  constructor(
+    private blog: BlogService,
+    private title: Title
+  ) {}
+
+  ngOnInit(): void {
+    this.title.setTitle('Writing — Paul Spears');
+    this.blog.getManifest().subscribe(m => {
+      this.posts = m.posts;
+    });
+  }
 }

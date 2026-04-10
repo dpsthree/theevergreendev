@@ -1,0 +1,16 @@
+{
+  "posts": [
+    {
+      "kind": "external",
+      "title": "3 Tips for Angular Runtime Performance from the Real World",
+      "date": "2018-01-01",
+      "url": "https://blog.angular.io/3-tips-for-angular-runtime-performance-from-the-real-world-d467fbc8f66e"
+    },
+    {
+      "kind": "external",
+      "title": "Angular Runtime Performance Guide",
+      "date": "2017-01-01",
+      "url": "https://blog.oasisdigital.com/2017/angular-runtime-performance-guide/"
+    }
+  ]
+}

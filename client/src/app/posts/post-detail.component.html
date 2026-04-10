@@ -1,0 +1,18 @@
+<article class="page post-detail" *ngIf="post">
+  <header class="post-detail__hero">
+    <p class="page-eyebrow">
+      <a routerLink="/posts" class="post-detail__back">&larr; Writing</a>
+    </p>
+    <h1 class="page-title">{{ post.title }}</h1>
+    <p class="post-detail__date" *ngIf="post.date">
+      <time [attr.dateTime]="post.date">{{ post.date | date : 'mediumDate' }}</time>
+    </p>
+  </header>
+
+  <div *ngIf="loadError" class="post-detail__error" role="alert">
+    <p>This post could not be loaded. The Markdown file may be missing from the site.</p>
+    <p><a routerLink="/posts">Back to Writing</a></p>
+  </div>
+
+  <div *ngIf="contentHtml && !loadError" class="post-body" [innerHTML]="contentHtml"></div>
+</article>

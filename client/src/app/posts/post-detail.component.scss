@@ -1,0 +1,158 @@
+.post-detail {
+  max-width: var(--max-content);
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-lg) var(--space-2xl);
+}
+
+.post-detail__hero {
+  margin-bottom: var(--space-xl);
+  max-width: 42rem;
+}
+
+.page-eyebrow {
+  margin: 0 0 var(--space-sm);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--color-text-muted);
+}
+
+.post-detail__back {
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--color-accent);
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.page-title {
+  margin: 0 0 var(--space-sm);
+  font-size: clamp(2rem, 4vw, 2.75rem);
+}
+
+.post-detail__date {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+}
+
+.post-detail__error {
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border-strong);
+  background: var(--color-surface-muted);
+  max-width: 36rem;
+
+  p {
+    margin: 0 0 var(--space-sm);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+/* Prose for rendered Markdown — keep in sync with global `a` / code feel */
+.post-body {
+  max-width: 42rem;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+
+  :first-child {
+    margin-top: 0;
+  }
+
+  :last-child {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    font-size: clamp(1.35rem, 2.5vw, 1.6rem);
+    margin: var(--space-xl) 0 var(--space-md);
+    font-family: var(--font-serif);
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 1.15rem;
+    margin: var(--space-lg) 0 var(--space-sm);
+    font-family: var(--font-serif);
+    font-weight: 600;
+  }
+
+  p {
+    margin: 0 0 var(--space-md);
+  }
+
+  ul,
+  ol {
+    margin: 0 0 var(--space-md);
+    padding-left: 1.35rem;
+  }
+
+  li {
+    margin-bottom: var(--space-xs);
+  }
+
+  blockquote {
+    margin: var(--space-md) 0;
+    padding-left: var(--space-md);
+    border-left: 3px solid var(--color-accent-soft);
+    color: var(--color-text-muted);
+    font-style: italic;
+  }
+
+  pre {
+    margin: var(--space-md) 0;
+    padding: var(--space-md);
+    overflow-x: auto;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    border-radius: var(--radius-sm);
+    background: var(--color-surface-muted);
+    border: 1px solid var(--color-border);
+  }
+
+  code {
+    font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, monospace;
+    font-size: 0.9em;
+    padding: 0.12em 0.35em;
+    border-radius: 4px;
+    background: var(--color-surface-muted);
+    border: 1px solid var(--color-border);
+  }
+
+  pre code {
+    padding: 0;
+    border: none;
+    background: none;
+    font-size: inherit;
+  }
+
+  hr {
+    margin: var(--space-xl) 0;
+    border: none;
+    border-top: 1px solid var(--color-border);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: var(--space-md) 0;
+    font-size: 0.95rem;
+  }
+
+  th,
+  td {
+    border: 1px solid var(--color-border);
+    padding: var(--space-sm) var(--space-md);
+    text-align: left;
+  }
+
+  th {
+    background: var(--color-surface-muted);
+  }
+}
