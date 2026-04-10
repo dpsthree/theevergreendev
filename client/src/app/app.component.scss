@@ -46,10 +46,12 @@
 }
 
 .site-brand__tag {
-  font-size: 0.78rem;
+  font-size: 0.75rem;
   font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
+  text-transform: none;
+  letter-spacing: 0.02em;
+  line-height: 1.35;
+  max-width: 22rem;
   color: var(--color-text-muted);
 }
 
@@ -100,7 +102,26 @@
   margin: 0;
   font-size: 0.9rem;
   color: var(--color-text-muted);
-  max-width: 28rem;
+  max-width: 32rem;
+  line-height: 1.5;
+}
+
+.site-footer__signoff {
+  margin: var(--space-md) 0 0;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.site-footer__link {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--color-accent) 35%, transparent);
+  text-underline-offset: 0.12em;
+}
+
+.site-footer__link:hover {
+  color: var(--color-accent-hover);
+  text-decoration-color: var(--color-accent-hover);
 }
 
 @media (max-width: 640px) {
