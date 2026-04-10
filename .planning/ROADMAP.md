@@ -12,8 +12,8 @@ This roadmap takes the site from Angular 8 to a modern, fully standalone Angular
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Pre-Flight** - Harden environment and tooling before any Angular upgrade begins
-- [ ] **Phase 2: Core Upgrade** - Step through Angular 8 to 19 one major version at a time
+- [x] **Phase 1: Pre-Flight** - Harden environment and tooling before any Angular upgrade begins *(plans executed 2026-04-09; confirm human checklist in 01-03-SUMMARY)*
+- [x] **Phase 2: Core Upgrade** - Step through Angular 8 to 19 one major version at a time *(executed 2026-04-10; see `.planning/phases/02-core-upgrade/02-PROGRESS.md`)*
 - [ ] **Phase 3: Deploy and Verify** - Confirm build, deployment, and all pages work on Angular 19
 - [ ] **Phase 4: Modernization** - Convert to standalone components and enable strict TypeScript
 
@@ -31,9 +31,9 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 3 plans
 
 Plans:
-- [ ] 01-01-PLAN.md — CI/environment foundation: update .travis.yml, remove Protractor/TSLint/Codelyzer, upgrade @types/node, regenerate lockfile, document ENV-02/ENV-03 deferral
-- [ ] 01-02-PLAN.md — ESLint migration: run ng add @angular-eslint/schematics@12, verify ng lint works
-- [ ] 01-03-PLAN.md — AOT baseline and Phase 1 gate: enable aot: true, confirm ng build succeeds, human checkpoint
+- [x] 01-01-PLAN.md — CI/environment foundation: update .travis.yml, remove Protractor/TSLint/Codelyzer, upgrade @types/node, regenerate lockfile, document ENV-02/ENV-03 deferral
+- [x] 01-02-PLAN.md — ESLint migration: run ng add @angular-eslint/schematics@12, verify ng lint works
+- [x] 01-03-PLAN.md — AOT baseline and Phase 1 gate: enable aot: true, confirm ng build succeeds, human checkpoint
 
 ### Phase 2: Core Upgrade
 **Goal**: All Angular, Material, Firebase, and supporting packages are upgraded from 8.x to 19.x via sequential one-major-version steps with a working build at each step
@@ -76,7 +76,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Pre-Flight | 0/3 | Planned | - |
-| 2. Core Upgrade | 0/TBD | Not started | - |
+| 1. Pre-Flight | 3/3 | Complete | 2026-04-09 |
+| 2. Core Upgrade | — | Complete | 2026-04-10 |
 | 3. Deploy and Verify | 0/TBD | Not started | - |
 | 4. Modernization | 0/TBD | Not started | - |

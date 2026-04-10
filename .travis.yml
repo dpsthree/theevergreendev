@@ -2,7 +2,7 @@
 
 language: node_js
 node_js:
-  - 10
+  - 22
 cache: npm
 
 branches:
@@ -16,7 +16,6 @@ script:
   - npm run build
 
 deploy:
-  skip_cleanup: true
   provider: firebase
   token:
     secure: '$FIREBASE_TOKEN'

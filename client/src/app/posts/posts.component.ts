@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 interface Post {
   url: string;
@@ -18,13 +18,12 @@ const posts: Post[] = [
 ];
 
 @Component({
-  selector: 'evg-posts',
-  templateUrl: './posts.component.html',
-  styleUrls: ['./posts.component.scss']
+    selector: 'evg-posts',
+    templateUrl: './posts.component.html',
+    styleUrls: ['./posts.component.scss'],
+    standalone: false
 })
-export class PostsComponent implements OnInit {
+export class PostsComponent {
   posts: Post[] = posts;
   constructor() {}
-
-  ngOnInit() {}
 }
