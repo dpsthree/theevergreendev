@@ -1,6 +1,13 @@
 {
   "posts": [
     {
+      "kind": "local",
+      "slug": "ai-tooling-has-layers",
+      "title": "AI Tooling Has Layers — and That Changes How We Work",
+      "date": "2026-03-19",
+      "summary": "Why AI feels uneven: it’s a stack of layers with different trade-offs—and how teams can navigate them deliberately."
+    },
+    {
       "kind": "external",
       "title": "3 Tips for Angular Runtime Performance from the Real World",
       "date": "2018-01-01",
