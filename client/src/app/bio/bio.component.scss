@@ -1,9 +1,112 @@
-mat-card {
-  max-width: 400px;
+.page {
+  max-width: var(--max-content);
   margin: 0 auto;
+  padding: var(--space-xl) var(--space-lg) var(--space-2xl);
 }
 
-.header-image {
-  background-image: url('https://en.gravatar.com/userimage/16268502/8d9c57bc17d9c4f5bf0ce4f5ff64237c.jpeg');
-  background-size: cover;
+.page-hero {
+  margin-bottom: var(--space-xl);
+  max-width: 40rem;
+}
+
+.page-eyebrow {
+  margin: 0 0 var(--space-sm);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--color-text-muted);
+}
+
+.page-title {
+  margin: 0 0 var(--space-sm);
+  font-size: clamp(2rem, 4vw, 2.75rem);
+}
+
+.page-lead {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--color-text-muted);
+  font-family: var(--font-serif);
+  font-style: italic;
+  line-height: 1.45;
+}
+
+.bio-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 340px);
+  gap: var(--space-xl);
+  align-items: start;
+}
+
+.bio-text {
+  margin: 0 0 var(--space-lg);
+  font-size: 1.0625rem;
+}
+
+.bio-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.65rem 1.25rem;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.btn--primary {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+.btn--primary:hover {
+  background: var(--color-accent-hover);
+  color: #fff;
+}
+
+.btn--ghost {
+  background: transparent;
+  color: var(--color-accent);
+  border-color: var(--color-border-strong);
+}
+
+.btn--ghost:hover {
+  background: var(--color-accent-soft);
+  border-color: var(--color-accent);
+  color: var(--color-accent-hover);
+}
+
+.bio-photo {
+  margin: 0;
+  position: relative;
+}
+
+.bio-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+  border: 1px solid var(--color-border);
+}
+
+@media (max-width: 900px) {
+  .bio-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .bio-photo {
+    order: -1;
+    max-width: 320px;
+  }
 }

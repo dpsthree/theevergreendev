@@ -1,34 +1,47 @@
-<h1>Upcoming!</h1>
-<div class="talk-list">
-  <mat-card *ngFor="let tile of comingSoon">
-    <mat-card-header>
-      <mat-card-title>{{ tile.title }}</mat-card-title>
-      <mat-card-subtitle>{{ tile.format }}</mat-card-subtitle>
-    </mat-card-header>
-    <a *ngIf="tile.thumbnail" target="_blank" [href]="tile.url">
-      <img mat-card-image [src]="tile.thumbnail" />
-    </a>
-    <a *ngIf="tile.svg" target="_blank" [href]="tile.url">
-      <img mat-card-image [src]="tile.svg" />
-    </a>
+<article class="page speaking-page">
+  <header class="page-hero">
+    <p class="page-eyebrow">Speaking</p>
+    <h1 class="page-title">Talks &amp; workshops</h1>
+    <p class="page-lead">
+      Conference and meetup sessions on Angular, performance, Firebase, and
+      how teams ship reliable front-ends.
+    </p>
+  </header>
 
-    <mat-card-actions>
-      <button mat-button>SHARE</button>
-    </mat-card-actions>
-  </mat-card>
-</div>
-<h1>Past</h1>
-<div class="talk-list">
-  <mat-card *ngFor="let tile of tiles">
-    <mat-card-header>
-      <mat-card-title>{{ tile.title }}</mat-card-title>
-      <mat-card-subtitle>{{ tile.format }}</mat-card-subtitle>
-    </mat-card-header>
-    <a target="_blank" [href]="tile.url">
-      <img mat-card-image [src]="tile.thumbnail" />
-    </a>
-    <mat-card-actions>
-      <button mat-button>SHARE</button>
-    </mat-card-actions>
-  </mat-card>
-</div>
+  <section class="talk-section" aria-labelledby="upcoming-heading">
+    <h2 id="upcoming-heading" class="section-title">Upcoming</h2>
+    <div class="talk-grid">
+      <article *ngFor="let tile of comingSoon" class="talk-card">
+        <a class="talk-card__media" [href]="tile.url" target="_blank" rel="noopener noreferrer">
+          <img *ngIf="tile.thumbnail" [src]="tile.thumbnail" alt="" />
+          <img *ngIf="tile.svg" [src]="tile.svg" alt="" />
+        </a>
+        <div class="talk-card__body">
+          <p class="talk-card__format">{{ tile.format }}</p>
+          <h3 class="talk-card__title">{{ tile.title }}</h3>
+          <a class="talk-card__cta" [href]="tile.url" target="_blank" rel="noopener noreferrer">
+            Details →
+          </a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="talk-section" aria-labelledby="past-heading">
+    <h2 id="past-heading" class="section-title">Past</h2>
+    <div class="talk-grid">
+      <article *ngFor="let tile of tiles" class="talk-card">
+        <a class="talk-card__media" [href]="tile.url" target="_blank" rel="noopener noreferrer">
+          <img [src]="tile.thumbnail" alt="" />
+        </a>
+        <div class="talk-card__body">
+          <p class="talk-card__format">{{ tile.format }}</p>
+          <h3 class="talk-card__title">{{ tile.title }}</h3>
+          <a class="talk-card__cta" [href]="tile.url" target="_blank" rel="noopener noreferrer">
+            Watch →
+          </a>
+        </div>
+      </article>
+    </div>
+  </section>
+</article>

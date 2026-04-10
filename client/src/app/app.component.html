@@ -1,32 +1,32 @@
-<mat-toolbar class="mat-elevation-z2" color="primary">
-  <span>The Evergreen Dev - Paul Spears</span>
-</mat-toolbar>
-<mat-drawer-container class="container">
-  <mat-drawer mode="side" opened="true">
-    <mat-nav-list>
-      <mat-list-item routerLink="bio">
-        <button mat-icon-button>
-          <mat-icon>info</mat-icon>
-        </button>
-        <a matLine>Bio</a>
-      </mat-list-item>
-      <mat-list-item routerLink="speaking">
-        <a matLine>Speaking Engagments</a>
-        <button mat-icon-button>
-          <mat-icon>info</mat-icon>
-        </button>
-      </mat-list-item>
-      <mat-list-item routerLink="posts">
-        <a matLine>Blog Posts</a>
-        <button mat-icon-button>
-          <mat-icon>info</mat-icon>
-        </button>
-      </mat-list-item>
-    </mat-nav-list>
-  </mat-drawer>
-  <mat-drawer-content>
-    <div class="router-content">
-      <router-outlet></router-outlet>
+<div class="site">
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a routerLink="/bio" class="site-brand" aria-label="Home">
+        <span class="site-brand__name">Paul Spears</span>
+        <span class="site-brand__tag">The Evergreen Dev</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a
+          routerLink="/bio"
+          routerLinkActive="is-active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >About</a
+        >
+        <a routerLink="/speaking" routerLinkActive="is-active">Speaking</a>
+        <a routerLink="/posts" routerLinkActive="is-active">Writing</a>
+      </nav>
     </div>
-  </mat-drawer-content>
-</mat-drawer-container>
+  </header>
+
+  <main class="site-main">
+    <router-outlet></router-outlet>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p class="site-footer__note">
+        Engineering leadership, curriculum, and hands-on delivery.
+      </p>
+    </div>
+  </footer>
+</div>

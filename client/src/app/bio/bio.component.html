@@ -1,24 +1,41 @@
-<mat-card>
-  <mat-card-header>
-    <div mat-card-avatar class="header-image"></div>
-    <mat-card-title>Paul Spears</mat-card-title>
-    <mat-card-subtitle>The Evergreen Dev</mat-card-subtitle>
-  </mat-card-header>
-  <img mat-card-image src="assets/spears.jpg" alt="Photo of a Shiba Inu" />
-  <mat-card-content>
-    <p>
-      Paul Spears is the lead curriculum author and Open Source maintainer for
-      Angular Boot Camp, where he's not only taught thousands of developers how
-      to use Angular, he's also trained the trainers, mentoring other
-      instructors in how to teach Angular most effectively. Paul also works as a
-      team lead and consultant at Oasis Digital, building solutions for numerous
-      enterprise clients. Current interests include IoT, UI/UX design, data
-      visualization, philosophy of education, and raising the level of
-      abstraction for front-end development.
-    </p>
-  </mat-card-content>
-  <mat-card-actions>
-    <button mat-button>Tweet</button>
-    <button mat-button>Github</button>
-  </mat-card-actions>
-</mat-card>
+<article class="page bio">
+  <header class="page-hero">
+    <p class="page-eyebrow">About</p>
+    <h1 class="page-title">Paul Spears</h1>
+    <p class="page-lead">The Evergreen Dev — curriculum, consulting, and delivery.</p>
+  </header>
+
+  <div class="bio-layout">
+    <div class="bio-copy">
+      <p class="bio-text">
+        Paul Spears is the lead curriculum author and Open Source maintainer for
+        Angular Boot Camp, where he's not only taught thousands of developers how
+        to use Angular, he's also trained the trainers, mentoring other
+        instructors in how to teach Angular most effectively. Paul also works as a
+        team lead and consultant at Oasis Digital, building solutions for numerous
+        enterprise clients. Current interests include IoT, UI/UX design, data
+        visualization, philosophy of education, and raising the level of
+        abstraction for front-end development.
+      </p>
+      <div class="bio-actions">
+        <a
+          class="btn btn--primary"
+          href="https://twitter.com/theevergreendev"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Twitter / X</a
+        >
+        <a
+          class="btn btn--ghost"
+          href="https://github.com/dpsthree"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub</a
+        >
+      </div>
+    </div>
+    <figure class="bio-photo">
+      <img src="assets/spears.jpg" alt="Portrait of Paul Spears" width="560" height="560" />
+    </figure>
+  </div>
+</article>
