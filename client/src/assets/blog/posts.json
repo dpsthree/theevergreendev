@@ -15,6 +15,13 @@
       "summary": "Twelve reflection points for challenging a client decision that's already been made — drawn from years of software and systems consulting work."
     },
     {
+      "kind": "local",
+      "slug": "closing-the-gap-design-and-development",
+      "title": "Closing the Gap Between Design and Development Iteration",
+      "date": "2020-09-01",
+      "summary": "Five processes for shipping a custom design system alongside the app that consumes it — a 2020 framework that still holds up."
+    },
+    {
       "kind": "external",
       "title": "3 Tips for Angular Runtime Performance from the Real World",
       "date": "2018-01-01",

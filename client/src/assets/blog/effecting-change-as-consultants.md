@@ -2,8 +2,6 @@ These are the techniques I apply when working with a client on contentious decis
 
 The format is a series of reflection points to take before your next move, each paired with example questions or actions for gathering information and preparing the team. These steps typically play out over months — occasionally days, occasionally years, depending on the relationship and the scale of the challenge.
 
-![Test image verifying inline image support](media/effecting-change-as-consultants/test-image.png)
-
 ---
 
 **1. Be sure it's worth it. Bail out early.**
