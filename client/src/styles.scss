@@ -79,3 +79,14 @@ a:hover {
 ::selection {
   background: var(--color-accent-soft);
 }
+
+/* Markdown-rendered blog post prose — lives in styles.scss (not post-detail.component.scss)
+   because Angular's view encapsulation scopes descendant selectors to the `_ngcontent-*`
+   attribute, which `[innerHTML]`-injected elements don't receive. */
+.post-body img {
+  display: block;
+  max-width: min(100%, 28rem);
+  height: auto;
+  margin: var(--space-md) auto;
+  border-radius: var(--radius-sm);
+}
