@@ -8,6 +8,13 @@
       "summary": "Why AI feels uneven: it’s a stack of layers with different trade-offs—and how teams can navigate them deliberately."
     },
     {
+      "kind": "local",
+      "slug": "effecting-change-as-consultants",
+      "title": "Effecting Change as Consultants",
+      "date": "2021-11-12",
+      "summary": "Twelve reflection points for challenging a client decision that's already been made — drawn from years of software and systems consulting work."
+    },
+    {
       "kind": "external",
       "title": "3 Tips for Angular Runtime Performance from the Real World",
       "date": "2018-01-01",
