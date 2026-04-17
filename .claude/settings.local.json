@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(gsd-quick)",
+      "Skill(gsd-quick:*)",
+      "Bash(node -e \"const marked = require\\('marked'\\); require\\('./src/app/posts/markdown.ts'\\);\")"
+    ]
+  }
+}
