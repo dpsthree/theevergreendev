@@ -138,6 +138,14 @@
     border-top: 1px solid var(--color-border);
   }
 
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: var(--space-md) 0;
+    border-radius: var(--radius-sm);
+  }
+
   table {
     width: 100%;
     border-collapse: collapse;
