@@ -140,9 +140,9 @@
 
   img {
     display: block;
-    max-width: 100%;
+    max-width: min(100%, 28rem);
     height: auto;
-    margin: var(--space-md) 0;
+    margin: var(--space-md) auto;
     border-radius: var(--radius-sm);
   }
 
