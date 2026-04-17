@@ -12,7 +12,7 @@ See: .planning/PROJECT.md (updated 2026-03-31)
 Phase: 1 of 4 (Pre-Flight)
 Plan: 0 of TBD in current phase
 Status: Ready to plan
-Last activity: 2026-03-31 — Roadmap created
+Last activity: 2026-04-17 — Completed quick task 260417-ke7: Add inline image support to the blog platform
 
 Progress: [░░░░░░░░░░] 0%
 
@@ -55,6 +55,12 @@ None yet.
 - [Phase 2]: Enable `aot: true` in `angular.json` while still on Angular 8 and fix any AOT errors before starting step-through
 - [Phase 2]: Angular Material MDC migration at v14→v15 changes CSS class names — all three pages need visual verification at that step
 - [Phase 3]: esbuild builder changes output path to `dist/evergreen/browser/` — `firebase.json` must be updated or deployment silently 404s
+
+### Quick Tasks Completed
+
+| # | Description | Date | Commit | Directory |
+|---|-------------|------|--------|-----------|
+| 260417-ke7 | Add inline image support to the blog platform — minimal scope, per-post media folders | 2026-04-17 | c39c78a | [260417-ke7-add-inline-image-support-to-the-blog-pla](./quick/260417-ke7-add-inline-image-support-to-the-blog-pla/) |
 
 ## Session Continuity
 
