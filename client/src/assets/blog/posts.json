@@ -2,6 +2,13 @@
   "posts": [
     {
       "kind": "local",
+      "slug": "finishing-is-an-empathy-problem",
+      "title": "Finishing Is an Empathy Problem",
+      "date": "2026-05-04",
+      "summary": "On finishing as an act of empathy: why the last mile feels boring when we're attached to the problem instead of the person — and what changes when we cross that bridge."
+    },
+    {
+      "kind": "local",
       "slug": "ai-tooling-has-layers",
       "title": "AI Tooling Has Layers — and That Changes How We Work",
       "date": "2026-03-19",
