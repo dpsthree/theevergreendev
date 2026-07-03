@@ -12,7 +12,7 @@ See: .planning/PROJECT.md (updated 2026-03-31)
 Phase: 1 of 4 (Pre-Flight)
 Plan: 0 of TBD in current phase
 Status: Ready to plan
-Last activity: 2026-04-17 — Completed quick task 260417-ke7: Add inline image support to the blog platform
+Last activity: 2026-07-03 — Completed quick task 260703-fe3: Publish "The Danger of Best Practices" blog post
 
 Progress: [░░░░░░░░░░] 0%
 
@@ -61,6 +61,7 @@ None yet.
 | # | Description | Date | Commit | Directory |
 |---|-------------|------|--------|-----------|
 | 260417-ke7 | Add inline image support to the blog platform — minimal scope, per-post media folders | 2026-04-17 | c39c78a | [260417-ke7-add-inline-image-support-to-the-blog-pla](./quick/260417-ke7-add-inline-image-support-to-the-blog-pla/) |
+| 260703-fe3 | Publish "The Danger of Best Practices" blog post — adapted from own Valiantys article, marketing stripped | 2026-07-03 | 386d946 | [260703-fe3-publish-blog-post-the-danger-of-best-pra](./quick/260703-fe3-publish-blog-post-the-danger-of-best-pra/) |
 
 ## Session Continuity
 
